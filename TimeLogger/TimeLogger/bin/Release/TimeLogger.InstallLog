@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe
+Installing service ArcaneTimeLoggerServiceInstaller1...
+Service ArcaneTimeLoggerServiceInstaller1 has been successfully installed.
+Creating EventLog source ArcaneTimeLoggerServiceInstaller1 in log Application...
+Committing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe

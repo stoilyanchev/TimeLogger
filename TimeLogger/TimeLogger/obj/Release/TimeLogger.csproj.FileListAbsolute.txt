@@ -1,0 +1,7 @@
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe.config
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Release\TimeLogger.pdb
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Release\TimeLogger.ProjectInstaller.resources
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Release\TimeLogger.csproj.GenerateResource.Cache
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Release\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Release\TimeLogger.pdb

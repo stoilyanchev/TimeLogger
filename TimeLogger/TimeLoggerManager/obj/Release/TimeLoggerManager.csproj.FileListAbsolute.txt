@@ -1,0 +1,17 @@
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.exe.config
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.pdb
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.TLManager.resources
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.Properties.Resources.resources
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.csproj.GenerateResource.Cache
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.exe.config
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.exe
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.exe
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Release\TimeLoggerManager.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.csprojResolveAssemblyReference.cache
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.TLManager.resources
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.Properties.Resources.resources
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Release\TimeLoggerManager.csproj.GenerateResource.Cache

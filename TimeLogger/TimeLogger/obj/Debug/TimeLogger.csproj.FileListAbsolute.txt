@@ -1,0 +1,16 @@
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe.config
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.pdb
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Debug\TimeLogger.ProjectInstaller.resources
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Debug\TimeLogger.csproj.GenerateResource.Cache
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Debug\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Debug\TimeLogger.pdb
+C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\obj\Debug\TimeLogger.csprojResolveAssemblyReference.cache
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe.config
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\obj\Debug\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\obj\Debug\TimeLogger.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\obj\Debug\TimeLogger.csprojResolveAssemblyReference.cache
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\obj\Debug\TimeLogger.ProjectInstaller.resources
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\obj\Debug\TimeLogger.csproj.GenerateResource.Cache
