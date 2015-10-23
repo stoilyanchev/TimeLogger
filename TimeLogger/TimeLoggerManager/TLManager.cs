@@ -16,11 +16,67 @@ using System.Net;
 using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Threading;
+using Eneter.Messaging.EndPoints.TypedMessages;
+using Eneter.Messaging.MessagingSystems.MessagingSystemBase;
+using Eneter.Messaging.MessagingSystems.SharedMemoryMessagingSystem;
+
 
 namespace TimeLoggerManager
 {
     public partial class TLManager : Form
     {
+        //public class RequestData
+        //{
+        //    public int Number1 { get; set; }
+        //    public int Number2 { get; set; }
+        //}
+
+        //private static IDuplexTypedMessageSender<int, RequestData> mySender;
+
+        //public TLManager()
+        //{
+        //    InitializeComponent();
+
+        //    // Create messaging using Shared Memory.
+        //    IMessagingSystemFactory aMessaging = new SharedMemoryMessagingSystemFactory();
+        //    IDuplexOutputChannel anOutputChannel =
+        //        aMessaging.CreateDuplexOutputChannel("TimeLoggerSerice");
+
+        //    // Create the sender, that sends 'RequestData' and receives 'int'.
+        //    IDuplexTypedMessagesFactory aTypedMessagesFactory = new DuplexTypedMessagesFactory();
+        //    mySender = aTypedMessagesFactory.CreateDuplexTypedMessageSender<int, RequestData>();
+
+        //    // Register the handler receiving the result from the service.
+        //    mySender.ResponseReceived += OnResponseReceived;
+
+        //    // Attach the Named duplex output channel and be able to send messages
+        //    // and receive response messages.
+        //    mySender.AttachDuplexOutputChannel(anOutputChannel);
+
+
+        //}
+
+        //private void OnResponseReceived(object sender, TypedResponseReceivedEventArgs<int> e)
+        //{
+        //    if (e.ReceivingError == null)
+        //    {
+        //        InvokeInUIThread(() => txtEventLog.Text = e.ResponseMessage.ToString());
+        //    }
+        //}
+
+        //private void InvokeInUIThread(Action action)
+        //{
+        //    if (InvokeRequired)
+        //    {
+        //        Invoke(action);
+        //    }
+        //    else
+        //    {
+        //        action();
+        //    }
+        //}
+
+
         public TLManager()
         {
             InitializeComponent();

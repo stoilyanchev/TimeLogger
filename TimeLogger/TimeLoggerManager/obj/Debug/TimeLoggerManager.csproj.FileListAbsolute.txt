@@ -16,3 +16,6 @@ C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerMan
 C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Debug\TimeLoggerManager.TLManager.resources
 C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Debug\TimeLoggerManager.Properties.Resources.resources
 C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\obj\Debug\TimeLoggerManager.csproj.GenerateResource.Cache
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Debug\Eneter.Messaging.Framework.dll
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Debug\Eneter.Messaging.Framework.pdb
+C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLoggerManager\bin\Debug\Eneter.Messaging.Framework.xml
