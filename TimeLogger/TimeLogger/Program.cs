@@ -44,7 +44,7 @@ namespace TimeLogger
             };
             ServiceBase.Run(ServicesToRun);
 #endif
-
+        }
         //    // Create local messaging connecting the dispatcher with the receiver.
         //    IMessagingSystemFactory aLocalMessaging = new SynchronousMessagingSystemFactory();
         //    IDuplexInputChannel aLocalInputChannel =
