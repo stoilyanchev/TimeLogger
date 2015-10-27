@@ -25,20 +25,20 @@ namespace TimeLogger
         public TimeLoggerService()
         {
             InitializeComponent();
-            _timer = new Timer(10000);
-            _timer.Elapsed += new System.Timers.ElapsedEventHandler(_timer_Elapsed); 
         }
 
         private void WriteToLog(string msg)
         {
             EventLog evt = new EventLog("ArcaneTimeLogger");
-            string message = msg + ": " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
+            string message = msg + ": " + DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
             evt.Source = "ArcaneTimeLoggerService";
             evt.WriteEntry(message, EventLogEntryType.Information);
         }
 
         protected override void OnStart(string[] args)
         {
+            _timer = new Timer(20000);
+            _timer.Elapsed += new System.Timers.ElapsedEventHandler(_timer_Elapsed); 
             _timer.Start();
             WriteToLog("Arcane Start");
         }

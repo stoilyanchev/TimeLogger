@@ -1,78 +1,34 @@
-﻿Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
+﻿Installing assembly 'C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
 Affected parameters are:
    logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing service ArcaneTimeLoggerServiceInstaller1...
-Creating EventLog source ArcaneTimeLoggerServiceInstaller1 in log Application...
-Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
+   logfile = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+Installing service ArcaneTimeLoggerServiceInstaller2...
+Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
+Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
 Affected parameters are:
    logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller1.
-Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
+   logfile = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller2.
+Uninstalling assembly 'C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
 Affected parameters are:
    logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+   logfile = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
+Removing EventLog source ArcaneTimeLoggerServiceInstaller2.
+Service ArcaneTimeLoggerServiceInstaller2 is being removed from the system...
+Service ArcaneTimeLoggerServiceInstaller2 was successfully removed from the system.
+Installing assembly 'C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
 Installing service ArcaneTimeLoggerServiceInstaller2...
 Service ArcaneTimeLoggerServiceInstaller2 has been successfully installed.
 Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
-Committing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
+Committing assembly 'C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
 Affected parameters are:
    logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing service ArcaneTimeLoggerServiceInstaller2...
-Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
-Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller2.
-Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing service ArcaneTimeLoggerServiceInstaller2...
-Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
-Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller2.
-Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing service ArcaneTimeLoggerServiceInstaller2...
-Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
-Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller2.
-Installing assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Installing service ArcaneTimeLoggerServiceInstaller2...
-Creating EventLog source ArcaneTimeLoggerServiceInstaller2 in log Application...
-Rolling back assembly 'C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe'.
-Affected parameters are:
-   logtoconsole = 
-   logfile = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
-   assemblypath = C:\Users\syanchev\Desktop\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe
-Restoring event log to previous state for source ArcaneTimeLoggerServiceInstaller2.
+   logfile = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.InstallLog
+   assemblypath = C:\Users\syanchev\Desktop\TimeLoggerSharedMemoryMessage\TimeLogger\TimeLogger\bin\Debug\TimeLogger.exe

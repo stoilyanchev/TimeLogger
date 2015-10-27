@@ -14,6 +14,7 @@ using Eneter.Messaging.MessagingSystems.TcpMessagingSystem;
 using Eneter.Messaging.MessagingSystems.WebSocketMessagingSystem;
 using Eneter.Messaging.MessagingSystems.SynchronousMessagingSystem;
 using Eneter.Messaging.Nodes.Dispatcher;
+using System.IO.MemoryMappedFiles;
 
 namespace TimeLogger
 {
@@ -22,67 +23,91 @@ namespace TimeLogger
         public int Number1 { get; set; }
         public int Number2 { get; set; }
     }
-    
+   
+
     static class Program
     {
-        private static IDuplexTypedMessageReceiver<int, RequestData> myReceiver;
-
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         static void Main(string[] args)
         {
-#if DEBUG
-            TimeLoggerService myService = new TimeLoggerService();
-            myService.OnDebug();
-            System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
-#else
+            try
+            {
+                int size;
+                MemoryMappedFile file = MemoryMappedFile.OpenExisting("MemoryFile");
+                MemoryMappedViewAccessor reader = file.CreateViewAccessor(0, 1);
+                byte[] bytes = new byte[1];
+                reader.ReadArray(0, bytes, 0, bytes.Length);
+
+                size = (int)bytes[0] + 1;
+
+                reader = file.CreateViewAccessor(0, size);
+                bytes = new byte[size];
+                reader.ReadArray(0, bytes, 0, bytes.Length);
+
+                char[] c = new char[size];
+
+
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    if (i > 0)
+                        c[i - 1] = (char)bytes[i];
+                }
+
+                string temp = new string(c);
+                Console.WriteLine("Memory sharing success!");
+                Console.WriteLine("String received: {0}", temp);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: {0}", e.Message);
+            }
+
+            Console.WriteLine("Press any key to exit.");
+
+
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             {
-                new TimeLoggerService() 
+                new TimeLoggerService()
             };
             ServiceBase.Run(ServicesToRun);
-#endif
+
+
+            TcpListener serverSocket = new TcpListener(8888);
+            int requestCount = 0;
+            TcpClient clientSocket = default(TcpClient);
+            serverSocket.Start();
+            Console.WriteLine(" >> Server Started");
+            clientSocket = serverSocket.AcceptTcpClient();
+            Console.WriteLine(" >> Accept connection from client");
+            requestCount = 0;
+
+            while (true)
+            {
+                try
+                {
+                    requestCount = requestCount + 1;
+                    NetworkStream networkStream = clientSocket.GetStream();
+                    byte[] bytesFrom = new byte[10025];
+                    networkStream.Read(bytesFrom, 0, (int)clientSocket.ReceiveBufferSize);
+                    string dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
+                    dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("$"));
+                    Console.WriteLine(" >> Data from client - " + dataFromClient);
+                    string serverResponse = "Last Message from client" + dataFromClient;
+                    Byte[] sendBytes = Encoding.ASCII.GetBytes(serverResponse);
+                    networkStream.Write(sendBytes, 0, sendBytes.Length);
+                    networkStream.Flush();
+                    Console.WriteLine(" >> " + serverResponse);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+            }
+
+            clientSocket.Close();
+            serverSocket.Stop();
+            Console.WriteLine(" >> exit");
+            Console.ReadLine();
         }
-        //    // Create local messaging connecting the dispatcher with the receiver.
-        //    IMessagingSystemFactory aLocalMessaging = new SynchronousMessagingSystemFactory();
-        //    IDuplexInputChannel aLocalInputChannel =
-        //        aLocalMessaging.CreateDuplexInputChannel("MyLocalAddress");
-
-        //    IDuplexTypedMessagesFactory aTypedMessagesFactory = new DuplexTypedMessagesFactory();
-        //    myReceiver = aTypedMessagesFactory.CreateDuplexTypedMessageReceiver<int, RequestData>();
-        //    myReceiver.MessageReceived += OnMessageReceived;
-
-        //    // Attach the local input channel to the receiver and start to receive messages.
-        //    myReceiver.AttachDuplexInputChannel(aLocalInputChannel);
-
-        //    IMessagingSystemFactory aSharedMemoryMessaging = new SharedMemoryMessagingSystemFactory();
-        //    IDuplexInputChannel aSharedMemoryInputChannel = aSharedMemoryMessaging.CreateDuplexInputChannel("TimeLoggerService");
-
-        //    // Create dispatcher that will receive messages via WebSockets, TCP and Shared Memory
-        //    // and forward them to the local address "MyLocalAddress" -> i.e. to our receiver.
-        //    IDuplexDispatcherFactory aDispatcherFactory = new DuplexDispatcherFactory(aLocalMessaging);
-        //    IDuplexDispatcher aDispatcher = aDispatcherFactory.CreateDuplexDispatcher();
-        //    aDispatcher.AddDuplexOutputChannel("MyLocalAddress");
-
-        //    aDispatcher.AttachDuplexInputChannel(aSharedMemoryInputChannel);
-        //    Console.WriteLine("Listening to SharedMemory");
-
-        //    aDispatcher.DetachDuplexInputChannel();
-        //}
-
-        //// The handler called when a message is received.
-        //static void OnMessageReceived(object sender, TypedRequestReceivedEventArgs<RequestData> e)
-        //{
-        //    if (e.ReceivingError == null)
-        //    {
-        //        int aResult = e.RequestMessage.Number1 + e.RequestMessage.Number2;
-        //        Console.WriteLine("{0} + {1} = {2}", e.RequestMessage.Number1, e.RequestMessage.Number2, aResult);
-
-        //        // Send the result back to the client.
-        //        myReceiver.SendResponseMessage(e.ResponseReceiverId, aResult);
-        //    }
-        //}
     }
 }

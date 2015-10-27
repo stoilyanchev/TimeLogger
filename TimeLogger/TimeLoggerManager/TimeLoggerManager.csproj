@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Duplicati.CommandLine">
+      <HintPath>G:\work\cloud\development\Duplicati\Duplicati\CommandLine\bin\Debug\Duplicati.CommandLine.exe</HintPath>
+    </Reference>
     <Reference Include="Eneter.Messaging.Framework">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Eneter\Eneter.Messaging.Framework\v6.5.2\Net45\Release\Eneter.Messaging.Framework.dll</HintPath>
     </Reference>
@@ -87,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TimeLogger\TimeLogger.csproj">
+      <Project>{89b88004-82fd-4add-8cad-528a21ec597a}</Project>
+      <Name>TimeLogger</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
